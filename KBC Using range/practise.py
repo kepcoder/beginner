@@ -1,6 +1,3 @@
-
-
-
 # input = input("Enter any number: ")
 # number = {
 # "1":"one",

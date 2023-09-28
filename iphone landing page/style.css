@@ -1,0 +1,323 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family: 'Borel', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rock Salt', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Sriracha', cursive;    
+}
+html,body{
+width:100%;
+height:100%;    
+}
+.main{
+width:100%;
+height:100%;
+}
+.navbar{
+display:flex;
+position:fixed;
+width:100%;
+height:70px;
+background-color: #FFFFFF;  
+box-shadow:0px 1px 10px grey;  
+}
+.leftnav{
+width:30%;    
+padding:.4vw 4vw;
+}
+.leftnav h2{
+font-size:3vw;
+font-family: montserrat;
+font-weight:700;
+color: #8F5843;   
+}
+.rightnav{
+width:70%;  
+padding-left:18vw; 
+padding-top:0.9vw;
+}
+.rightnav ul{
+list-style:none;
+display:flex;
+gap:4vw;    
+}
+.rightnav a{
+font-family:calibri;
+text-decoration:none;
+color:black;    
+font-size:1.9vw;
+border-bottom:3px solid transparent;
+transition:all 0.2s ease;
+}
+.rightnav a:hover{
+border-bottom:3px solid #8F5843;;  
+color: #8F5843;  
+font-size:2vw;
+}
+.rightnav i{
+display:none;    
+}
+.rightnav h4{
+position:absolute;
+right:3vw;
+top:0.6vw;
+background-color: #8F5843; 
+padding:0.6vw 2vw;
+border-radius:10px; 
+}
+.rightnav h4 a{
+font-size:1.3vw;
+color:white;  
+font-weight:500;
+}
+.rightnav h4 a:hover{
+color:white; 
+font-size:  1.5vw; 
+}
+.content{
+display:flex;
+width:100%;
+height:100%; 
+}
+.left{
+width:50%;
+height:100%; 
+padding-left:6%;
+padding-top:13%;   
+}
+.left h2{
+font-size:4vw;
+line-height:1.2;
+font-family:sans-serif;
+}
+span{
+color:#8F5843;
+font-family:sans-serif;    
+}
+.left p{
+margin-top:1vw;
+font-size:1.2vw;    
+}
+.left h4{
+font-size:1.5vw;
+font-family: calibri;
+margin-top:1.5vw;    
+}
+.left img{
+margin-top:.5vw;
+width:15vw;
+height:5vw;    
+}
+.right{
+width:50%;
+height:100%;
+padding-top:6.5%;
+padding-left:5%;
+}
+.image{
+padding-top:3%;
+padding-left:3%;
+background-color: #FBF4F1;    
+width:34vw;
+height:38.5vw;
+border-radius:20px; 
+box-shadow:0px 5px 8px #b9b5b3;  
+}
+.image img{
+cursor: pointer;
+width:90%;
+height:90%;
+object-fit: contain; 
+transition:all 0.3s ease-out;   
+}
+.image img:hover{
+width:92%;
+height:92%;    
+}
+input{
+display:none;    
+}
+.menu-name{
+border-radius:20px 0px 0px 20px;
+display:none;
+z-index:20;
+padding:2vw 6vw;
+align-items:center;
+background-color:#8F5843;
+width:30%;
+height:60%;
+position:fixed;
+top:8vw;
+right:0;   
+transform: translateX(100%);
+transition:all 0.3s ease;
+}
+.menu-name li{
+list-style:none;
+}
+.menu-name a{
+padding-top:4.5vw;
+font-family: calibri;
+list-style:none;
+color:white;
+font-size:4.2vw;
+}
+
+#click:checked ~ .menu-name{
+transform:translateX(0);    
+}
+
+@media (min-width:600px) and (max-width:800px){
+
+.left{
+padding-top:8%;    
+}    
+
+}
+
+@media (max-width:800px){
+
+.menu-name{
+display:block;
+}
+.navbar{
+padding-top:14px;
+height:60px;
+}
+.leftnav h2{
+font-size:25px;    
+}
+.rightnav li{
+display:none;
+}
+.rightnav h4{
+display:none;    
+}
+.content{
+padding-top:5vw;
+display:grid;    
+}
+.left{
+padding-left:6%;
+width:100%;
+height:100%;    
+}
+.left h2{
+font-size:35px;    
+}
+.left p{
+font-size:17px;
+line-height:1.2;    
+}
+.left h4{
+font-size:3vw;    
+}
+.left img{
+margin-top:10px;
+width:22vw;
+height:7vw;    
+}
+.right{
+padding-top:0;
+padding-left:10%;
+width:100%;
+height:100%;    
+}
+.image{
+width:80vw;
+height:53vw;    
+}
+.rightnav i{
+display:block;
+position:absolute;
+top:9px;
+right:15px;
+font-size:35px;    
+}
+}
+
+@media (min-width:200px) and (max-width:400px){
+
+.left h2{
+font-size:28px;    
+}    
+.left p{
+    line-height:1.5;
+font-size:10px;
+margin-top:10px;    
+}
+.left h4{
+margin-top:30px;    
+}
+.rightnav i{
+font-size:30px;
+padding-top:5px;    
+}    
+.left{
+padding-top:22%;    
+}
+
+}
+@media (min-width:800px) and (max-width:1000px){
+
+.right{
+padding-top:15%;    
+}
+.image{
+height:45vw;    
+}
+.left{
+padding-top:16vw;    
+}
+.left h2{
+font-size:45px;    
+}
+.left p{
+font-size:15px;
+line-height:1.5;    
+}
+.left h4{
+margin-top:50px;    
+}
+
+}
+
+@media (min-width:1001px ) and (max-width:1200px){
+
+.right{
+padding-top:10%;    
+}
+.left{
+padding-top:15%;    
+}
+.left h4{
+margin-top:50px;    
+}
+}
+
+@media (min-width:1300px) and (max-width:1600px){
+
+.right{
+padding-top:7.5%;    
+}
+
+}
+@media (min-width:1500px) and (max-width:2000px){
+
+.navbar{
+height:80px;    
+}
+
+
+}
+@media (min-width:2001px){
+
+.navbar{
+height:120px;    
+}    
+}
+

@@ -24,3 +24,14 @@ for file in files:
         os.rename(f"png/{file}" , f"png/{i}.png")
         i = i+1
         print(file)
+
+
+#         #USING ENUMERATE FUNCTION
+
+# import os
+# files = os.listdir("png")    
+# i = ["a","b","c","d","e","f","g","h","i","j","k","l"]
+# for index,file in enumerate(files):
+#     if file.endswith(".png"):
+#         new_name = i[index]
+#         os.rename(f"png/{file}" , f"png/{new_name}.png")
